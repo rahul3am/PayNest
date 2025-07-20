@@ -25,6 +25,14 @@ async function getOnRampTransactions() {
             userId: Number(session?.user?.id)
         }
     });
+
+    // return txns.map((t: { startTime: string; amount: number; status: string }) => ({
+    //     time: t.startTime,
+    //     amount: t.amount,
+    //     status: t.status,
+    //     provider: t.provider
+    // }))
+
      return txns.map((t: {
         id: number;
         token: string;
