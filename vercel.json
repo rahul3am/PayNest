@@ -1,6 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "cd apps/user-app && npm run build",
   "outputDirectory": "apps/user-app/.next",
-  "framework": "nextjs",
-  "rootDirectory": "apps/user-app"
+  "framework": "nextjs"
 }
