@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
-export const SidebarItem = ({ href, title, icon, children }: { href: string; title: string; icon: React.ReactNode; children:React.ReactNode }) => {
+export const SidebarItem = ({ href, title, icon, children }: { href: string; title: string; icon: React.ReactNode; children?: React.ReactNode; }) => {
     const router = useRouter();
     const pathname = usePathname()
     const selected = pathname === href
