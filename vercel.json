@@ -1,14 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "apps/user-app/package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "apps/user-app/$1"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "apps/user-app/.next",
+  "framework": "nextjs",
+  "rootDirectory": "apps/user-app"
 }
